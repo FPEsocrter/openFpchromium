@@ -1,0 +1,175 @@
+module blink.mojom;
+import "third_party/blink/public/mojom/user_agent/user_agent_metadata.mojom";
+
+  struct Consistency {
+    int32 type = 0; 
+    array<string> urlList; 
+  };
+
+  struct UA {
+    int32 type = 0; 
+    string userAgent;  
+  };
+
+  struct UaMetadata {
+    int32 type = 0; 
+    blink.mojom.UserAgentMetadata userAgentMetadata;
+  };
+
+  struct WebRTC {
+    int32 type = 0; 
+    string privateIp;
+    string publicIp;
+  };
+
+  struct TimeZone {
+    int32 type = 0; 
+    string gmt;
+  };
+
+
+  struct Location {
+    int32 type = 0; 
+    bool  permissions;
+    double latitude;
+    double longitude;
+    double accuracy;
+  };
+
+  struct Language {
+    int32 type = 0; 
+    string interfaceLanguage;
+    array<string> languages;
+  };
+
+  struct Resolution { 
+    int32 type = 0; 
+    int32 windowWidth;
+    int32 windowHeight;
+    int32 monitorWidth;
+    int32 monitorHeight;
+  };
+
+  struct FontInfo { 
+    int32  id = 0;
+    double width;
+    double height;
+    double actualBoundingBoxAscent;
+    double actualBoundingBoxDescent;
+    double actualBoundingBoxLeft;
+    double actualBoundingBoxRight;
+    double fontBoundingBoxAscent;
+    double fontBoundingBoxDescent;
+    array<string> filePaths;
+  };
+
+  struct Font {
+    int32 type = 0;
+    int32 maxId = 0; 
+    int32 defaultId = 0;
+    string defaultName ;
+    array<string> defaultPaths;
+    map<string, FontInfo> fontMap;
+    map<int32, string> fontIdMap; 
+  };
+
+  struct ColoredPoint{
+      int32 row;
+      int32 column;
+      int32 red;  
+      int32 green;
+      int32 blue;
+      int32 alpha;
+  };
+
+  struct Canvas {
+    int32 type = 0; 
+    array<ColoredPoint> coloredPointList;
+  };
+
+  struct WebGLDevice {
+    int32 type = 0; 
+    string vendors;
+    string renderer;
+    string gpuVendors;
+    string gpuArchitecture;
+  };
+  
+  struct AudioContext {
+    int32 type = 0; 
+    array<double> noise;
+  };
+
+  struct MediaEquipmentInfo {
+    int32 type = 0; 
+    string label;
+    string deviceId;
+    string groupId;
+  };
+
+  struct MediaEquipment {
+    int32 type = 0; // 0 默认  1.噪音  ,2. 系统默认， 3.关闭
+    array<MediaEquipmentInfo> list;
+  };
+
+  struct ClientRects {
+    int32 type = 0; // 0 默认  1.噪音  ,2. 系统默认， 3.关闭
+    double x;
+    double y;
+    double width;
+    double height;
+  };
+
+  struct SpeechVoicesInfo {
+    string voiceUri;
+    string name;
+    string lang;
+    bool isLocalService;
+    bool isDefault;
+  };
+
+  struct SpeechVoices {
+    int32 type = 0; 
+    array<SpeechVoicesInfo> list;
+  };
+
+  struct ResourceInfo {
+    int32 type = 0; 
+    int32 cpu; 
+    float memory;
+  };
+
+  struct DoNotTrack {
+    int32 type = 0; 
+    bool flag;
+  };
+
+  struct OpenPort{
+    int32 type = 0; 
+    array<int32> openPort;
+    string url;
+  };
+
+  struct Fingerprint {
+    int32 init = 0;
+    Consistency consistency; 
+    UA ua;
+    UaMetadata uaMetadata;
+    TimeZone timeZone;
+    WebRTC webRTC;
+    Location location;
+    Language language;
+    Resolution resolution;
+    Font  font;
+    Canvas canvas;
+    Canvas webGL;
+    Canvas gupGL;
+    WebGLDevice webGLDevice;
+    AudioContext audioContext;
+    MediaEquipment mediaEquipment;
+    ClientRects clientRects;
+    SpeechVoices speechVoices;
+    ResourceInfo resourceInfo;
+    DoNotTrack doNotTrack;
+    OpenPort openPort;
+  };
