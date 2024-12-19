@@ -1,8 +1,5 @@
-# OpenFPChromium 项目报告
-
-![OpenFPChromium](https://github.com/FPEsocrter/openFpchromium)
-
-OpenFPChromium 是一个基于 v114 Chromium 的开源指纹浏览器项目。我们的目标是支持市面上的所有参数配置，以满足用户的不同需求。
+OpenFPChromium 是一个基于 Chromium 的开源指纹浏览器项目。
+我们的目标是支持市面上的所有参数配置，以满足用户的不同需求。
 
 ---
 
