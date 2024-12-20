@@ -59,9 +59,9 @@ OpenFPChromium 是一个基于 Chromium 的开源指纹浏览器项目。
 ## 📬 联系我们
 - #以后如有使用教程，编译教程，或者最新客户端 优先发布在 qq中,
 - **源码交流群**: [QQ群 906833693 点击链接加入群聊【fp_openChromium】](https://qm.qq.com/q/8YTiF1yMXS)
-- ![open](https://github.com/user-attachments/assets/64ef9bd7-ebb8-4629-b1d0-613592ce8186)
+- <img src="https://github.com/user-attachments/assets/64ef9bd7-ebb8-4629-b1d0-613592ce8186" alt="二维码示例" width="260">
 - **免费浏览器交流群**: [QQ群 291787287 点击链接加入群聊](https://qm.qq.com/q/oF8R6WIJQO)
-- <img src="https://github.com/user-attachments/assets/9df6baa2-e67b-41c6-a5be-459380284c37" alt="二维码示例" width="300">
+- <img src="https://github.com/user-attachments/assets/9df6baa2-e67b-41c6-a5be-459380284c37" alt="二维码示例" width="260">
 
 > **注**: 请注意保护您的隐私和安全，在加入公开讨论群组时谨慎提供个人信息。
 
